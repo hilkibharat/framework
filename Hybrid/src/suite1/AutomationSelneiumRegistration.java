@@ -26,19 +26,17 @@ public class AutomationSelneiumRegistration {
 	  }
 	 }
 	@Test(dataProvider ="testParameterData")
-	 public void testPageObjects(String email,String fn,String ln, String cemail)throws Exception
+	 public void testPageObjects(String email,String fn, String ln, String cemail, String Password, String Date_DOB, String Month_DOB, String Year_DOB, String Afname, String Alname, String Acompany, String A_address1, String A_address2, String Acity, String Astate, String Azip, String Acountry, String AAI, String Ahphone, String Amphone, String Aalias)throws Exception
 	 {
 		page.openURL(Config.url);
-		page.automationseleniumRegister(email, fn, ln, cemail);
-		
-		
+		page.automationseleniumRegister(cemail, fn, ln, cemail, Password, Date_DOB, Month_DOB, Year_DOB, Afname, Alname, Acompany, A_address1, A_address2, Acity, Astate, Azip, Acountry, AAI, Ahphone, Amphone, Aalias);
 	 }
 	@BeforeTest
 	public void openBrowser()
 	{
 		if(Config.browser.equals("FF"))
 		{
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\dell\\Desktop\\frameworksetup\\frameworksetup\\Hybrid\\Hybrid\\Hybrid\\drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\dell\\git\\frameworkk\\Hybrid\\drivers");
 			page = PageFactory.initElements(new FirefoxDriver(), BaseTest.class);
 			
 		}

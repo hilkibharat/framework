@@ -60,6 +60,12 @@ public class OR  {
 	
 	
 	//automation selenium pracite
+	
+	//	( email,Strig fn, String ln, String cemail, String Password, String Date_DOB,
+	//		String Month_DOB, String Year_DOB, String Afname, String Alname, String Acompany, 
+	//String A_address1, String A_address2, String Acity, String Astate, String Azip, String Acountry, 
+	//String AAI, String Ahphone, String Amphone, String Aalias)
+	
 	@FindBy(className="login") protected WebElement bsignInBtn;
 	@FindBy(id="email_create") protected WebElement bemailAddress;
 	@FindBy(id="SubmitCreate") protected WebElement bsubmitCreate;
@@ -67,6 +73,28 @@ public class OR  {
 	@FindBy(id="customer_lastname") protected WebElement clastname;
 	@FindBy(id="email") protected WebElement cemailaddress;
 	@FindBy(id="id_gender1") protected WebElement mrtitleradio;
+	@FindBy(id="passwd") protected WebElement password1;
+	@FindBy(id="days") protected WebElement date_DOB;
+	@FindBy(id="months") protected WebElement month_DOB;
+	@FindBy(id="years") protected WebElement year_DOB;
+	@FindBy(id="firstname") protected WebElement afname;
+	@FindBy(id="lastname") protected WebElement alname;
+	@FindBy(id="company") protected WebElement acompany;
+	@FindBy(id="address1") protected WebElement a_address1;
+	@FindBy(id="address2") protected WebElement a_address2;
+	@FindBy(id="city") protected WebElement acity;
+	@FindBy(id="state") protected WebElement astate;
+	@FindBy(id="zip") protected WebElement azip;
+
+	@FindBy(id="country") protected WebElement acountry;
+	@FindBy(id="other") protected WebElement aAI;
+	@FindBy(id="phone") protected WebElement ahphone;
+	@FindBy(id="phone_mobile") protected WebElement amphone;
+	@FindBy(id="alias") protected WebElement aalias;
+	@FindBy(id="submitAccount") protected WebElement Register;
+	@FindBy(id="newsletter") protected WebElement NewsletterButton;
+	@FindBy(id="optin") protected WebElement Sploffer;
 	
+
 		
 }

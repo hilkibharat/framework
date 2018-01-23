@@ -171,18 +171,70 @@ public class BaseTest extends OR
 	}
 	
 	//registerationform etnering
-	public void automationseleniumRegister(String email,String fn, String ln, String cemail)
+	
+	//Password,Date_DOB,Month_DOB,Year_DOB,Afname,Alname,Acompany,A_address1,A_address2,Acity,Astate,Azip,Acountry,AAI,
+	//Ahphone,Amphone,Aalias
+	public void automationseleniumRegister(String email,String fn, String ln, String cemail, String Password, String Date_DOB, String Month_DOB, String Year_DOB, String Afname, String Alname, String Acompany, String A_address1, String A_address2, String Acity, String Astate, String Azip, String Acountry, String AAI, String Ahphone, String Amphone, String Aalias)
 	{
 		bsignInBtn.click();
 		System.out.println("Clickedon singn in button");
 		bemailAddress.sendKeys(email);
+		System.out.println("Entered email id");
+
 		bsubmitCreate.click();
+		System.out.println("Clickedon Create button");
+
 		//registerationform etnering 
 		mrtitleradio.click();
+		System.out.println("Clickedon Salutation button");
+
 		cfirstname.sendKeys(fn);
+		System.out.println("Entered FirstName");
 		clastname.sendKeys(ln);
+		System.out.println("Entered LastName");
 		cemailaddress.clear();
+		System.out.println("Clickedon singn in button");
 		cemailaddress.sendKeys(cemail);
+		System.out.println("Re Entered Email address");
+		password1.sendKeys(Password);
+		System.out.println("Entered Password");
+		selectDropdown(date_DOB,Date_DOB);
+		System.out.println("Selected Date");
+		selectDropdown(month_DOB, Month_DOB);
+		System.out.println("Selected Month");
+		selectDropdown(year_DOB, Year_DOB);
+		System.out.println("Selected Year");
+		NewsletterButton.click();
+		System.out.println("Clickedon News Letter button");
+		Sploffer.click();
+		System.out.println("Clickedon Special offer button");
+		afname.sendKeys(Afname);
+		System.out.println("Entered First Name");
+		alname.sendKeys(Alname);
+		System.out.println("Entered Last Name");
+		acompany.sendKeys(Acompany);
+		System.out.println("Filled Company Name");
+		a_address1.sendKeys(A_address1);
+		System.out.println("Filled Address first line");
+		a_address2.sendKeys(A_address2);
+		System.out.println("Filled Address second line");
+		acity.sendKeys(Acity);
+		System.out.println("Filled City");
+		astate.sendKeys(Astate);
+		System.out.println("Filled State");
+		azip.sendKeys(Azip);
+		System.out.println("Filled Zip Code");
+		acountry.sendKeys(Acountry);
+		System.out.println("Filled Country");
+		aAI.sendKeys(AAI);
+		System.out.println("Filled Additional Information");
+		ahphone.sendKeys(Ahphone);
+		System.out.println("Filled Home Phone Number");
+		amphone.sendKeys(Amphone);
+		System.out.println("Filled Mobile Phone number");
+		aalias.sendKeys(Aalias);
+		System.out.println("Filled Alias");
+		
 		
 	}
 	

@@ -3,13 +3,13 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="suite1.GoogleDemo">
+      <class name="suite1.AutomationSelneiumRegistration">
         <methods>
-          <include name="testPageObjects" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="openBrowser"/>
           <include name="stop"/>
+          <include name="openBrowser"/>
+          <include name="testPageObjects"/>
         </methods>
-      </class> <!-- suite1.GoogleDemo -->
+      </class> <!-- suite1.AutomationSelneiumRegistration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
