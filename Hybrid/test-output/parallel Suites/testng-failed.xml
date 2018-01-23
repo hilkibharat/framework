@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [parallel Suites]" parallel="classes">
+  <parameter name="browser" value="FF"/>
+  <test name="Test in GC1">
+    <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="abcpack.AutocompleteDemo1"/>
+      <class name="abcpack.LinksDemo"/>
+    </classes>
+  </test> <!-- Test in GC1 -->
+</suite> <!-- Failed suite [parallel Suites] -->
